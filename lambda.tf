@@ -20,6 +20,6 @@ resource "aws_lambda_function" "sample_terraform_lambda" {
   filename      = "main.zip"
   role          = aws_iam_role.lambda_role.arn
   function_name = "sample_terraform_lambda"
-  handler       = "main"
+  handler       = "handler"
   runtime       = "go1.x"
 }
